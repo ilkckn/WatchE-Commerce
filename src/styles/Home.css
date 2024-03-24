@@ -1,0 +1,67 @@
+.homeContainer {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgba(16, 73, 138, 0.678);
+    letter-spacing: 2px;
+}
+
+.info h1 {
+    text-transform: uppercase;
+    font-size: 7.5rem;
+    letter-spacing: 6px;
+    color: rgb(16, 73, 138);
+}
+
+.info p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    width: 80rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+.button .btn {
+    padding: 1.4rem 2.5rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(85, 154, 232);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.button .btn:hover {
+    background-color: rgb(22, 112, 215);
+}
+
+.homeImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeImage img {
+    width: 70rem;
+    height: 60rem;
+    
+}
