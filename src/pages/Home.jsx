@@ -26,8 +26,8 @@ function Home() {
   return (
     <div className="homeContainer">
       <div className="info">
-        <h4>Discount prices and online exclusive offers</h4>
         <h1>huge selection</h1>
+        <h4>Discount prices and online exclusive offers</h4>
         <p>
           For those who know the value of time, for those who want to enjoy the
           moment and, more importantly, for those who want to live life to the

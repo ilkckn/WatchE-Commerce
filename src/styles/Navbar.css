@@ -3,8 +3,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 8rem;
+    width: 100%;
     height: 10rem;
-    box-shadow: 0 2px 4px rgba(109, 128, 176, .2);
+    box-shadow: 0 5px 6px rgba(109, 128, 176, .2);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 111;
 }
 
 .links {
@@ -30,7 +35,7 @@ li {
 .link {
     padding: 1rem 2rem;
     border-radius: 10px;
-    color: rgb(109, 128, 176);
+    color: rgb(37, 92, 148);
     font-weight: 500;
     font-size: 1.6rem;
     text-decoration: none;
@@ -39,7 +44,7 @@ li {
 
 .link.active,
 .link:hover {
-    background-color: rgb(31, 135, 255);
+    background-color: rgb(37, 92, 148);
     color: white;
     border-radius: 10px;
 }

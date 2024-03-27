@@ -57,10 +57,16 @@ function Navbar() {
             </li>
           </ul>
           <div className="cartBase">
-            <Link className="cart" to="/cart">
-              <RiShoppingCartLine id="cart" />
-              {cartItemCount > 0 && (
-                <span className="cartItemCount">{cartItemCount}</span>
+          <Link className="cart" to="/cart">
+              {state.cart.length !== 0 ? (
+                <>
+                  <RiShoppingCartLine id="cart" />
+                  {cartItemCount > 0 && (
+                    <span className="cartItemCount">{cartItemCount}</span>
+                  )}
+                </>
+              ) : (
+                <RiShoppingCartLine id="cart" />
               )}
             </Link>
           </div>

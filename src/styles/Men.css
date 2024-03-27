@@ -1,4 +1,4 @@
-.womenContainer {
+.menContainer {
     width: 100%;
     height: calc(100vh - 10rem);
     margin-top: 10rem;
@@ -8,25 +8,26 @@
     position: relative;
 }
 
-.imageFrame {
+.imageFrame1 {
     width: 40rem;
     height: 50rem;
 }
 
-.imageFrame .watchImage {
+.imageFrame1 .watchImage1 {
     width: 40rem;
     height: 50rem;
 }
 
-.womenContainer .productBox {
+.menContainer .productBox1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 150rem;
     height: calc(100vh - 10rem);
+    margin-top: 5rem;
 }
 
-.productBox .ulProduct {
+.productBox1 .ulProduct1 {
     width: 40rem;
     height: 65rem;
     display: flex;
@@ -35,7 +36,7 @@
     margin-bottom: 3rem;
 }
 
-.ulProduct .product {
+.ulProduct1 .product1 {
     width: 40rem;
     height: 65rem;
     display: flex;
@@ -45,7 +46,7 @@
     padding: 0;
 }
 
-.product .productInfo {
+.product1 .productInfo1 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -54,17 +55,18 @@
     gap: 1rem;
 }
 
-.product .productInfo .productName {
+.product1 .productInfo1 .productName1 {
     font-size: 2.2rem;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
-.product .productInfo .price {
+.product1 .productInfo1 .price1 {
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
 
-.product .productInfo button {
+.product1 .productInfo1 button {
     text-transform: uppercase;
     letter-spacing: .5px;
     padding: 1rem 1.7rem;
@@ -78,7 +80,7 @@
     font-weight: 100;
 }
 
-.product .productInfo button:hover {
+.product1 .productInfo1 button:hover {
     background-color: transparent;
     border: 1px solid rgb(37, 92, 148);
     color: rgb(37, 92, 148);

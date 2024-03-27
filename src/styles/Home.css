@@ -1,67 +1,59 @@
 .homeContainer {
     width: 100%;
-    height: calc(100vh - 10rem);
+    height: 100vh;
+    margin-top: 10rem;padding-top: 5rem;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.info h4 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: rgba(16, 73, 138, 0.678);
-    letter-spacing: 2px;
-}
-
-.info h1 {
-    text-transform: uppercase;
-    font-size: 7.5rem;
-    letter-spacing: 6px;
-    color: rgb(16, 73, 138);
-}
-
-.info p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    text-transform: capitalize;
-    width: 80rem;
-    margin-bottom: 1rem;
-    margin-left: 0;
-}
-
-.button .btn {
-    padding: 1.4rem 2.5rem;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 6px;
-    background-color: rgb(85, 154, 232);
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    cursor: pointer;
-    transition: all .4s ease;
-}
-
-.button .btn:hover {
-    background-color: rgb(22, 112, 215);
-}
-
-.homeImage {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .homeImage img {
-    width: 70rem;
-    height: 60rem;
-    
+    width: 60rem;
+}
+
+.homeContainer .info {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.info h1 {
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: rgb(20, 114, 164);
+}
+
+.info h4 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: rgba(75, 75, 75, 0.869);
+}
+
+.info p {
+    width: 60rem;
+    font-size: 1.5rem;
+    line-height: 22px;
+    letter-spacing: .5px;
+    color: black;
+}
+
+.info .button .btn {
+    padding: 1.5rem 4rem ;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(37, 92, 148);
+    color: white;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.info .button .btn:hover {
+    background-color: rgb(26, 97, 212);
 }
