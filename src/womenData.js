@@ -13,54 +13,63 @@ export const data = [
         id: 10,
         price: 1300,
         name: "Vacheron Constantin",
-        image: image1
+        image: image1,
+        shipping: "free"
     },
     {
         id: 20,
         price: 1500,
         name: "Jaguar",
-        image: image2
+        image: image2,
+        shipping: "free"
     },
     {
         id: 30,
         price: 1600,
         name: "Rotary Kingston",
-        image: image3
+        image: image3,
+        shipping: "free"
     },
     {
         id: 40,
         price: 1350,
         name: "Vacheron Constantin Diamond",
-        image: image4
+        image: image4,
+        shipping: "free"
     },
     {
         id: 50,
         price: 1450,
         name: "Sylvi TIMEGRAPHER Black RG",
-        image: image5
+        image: image5,
+        shipping: "free"
     },
     {
         id: 60,
         price: 850,
         name: "Apple Watch",
-        image: image6
+        image: image6,
+        shipping: "free"
     },
     {
         id: 70,
         price: 950,
         name: "Apple Watch",
-        image: image7
+        image: image7,
+        shipping: "free"
     },
     {
         id: 80,
         price: 1050,
         name: "Apple Watch",
-        image: image8
+        image: image8,
+        shipping: "free"
     },
     {
         id: 90,
         price: 1150,
         name: "Apple Watch",
-        image: image9
+        image: image9,
+        shipping: "free"
     }
 ]

@@ -13,54 +13,63 @@ export const data1 = [
         id: 1,
         price: 1300,
         name: "Hanboro",
-        image: image1
+        image: image1,
+        shipping: "free"
     },
     {
         id: 2,
         price: 1500,
         name: "Huawei",
-        image: image2
+        image: image2,
+        shipping: "free"
     },
     {
         id: 3,
         price: 1600,
         name: "Oozoo",
-        image: image3
+        image: image3,
+        shipping: "free"
     },
     {
         id: 4,
         price: 1350,
         name: "Candino",
-        image: image4
+        image: image4,
+        shipping: "free"
     },
     {
         id: 5,
         price: 1450,
         name: "Festina",
-        image: image5
+        image: image5,
+        shipping: "free"
     },
     {
         id: 6,
         price: 850,
         name: "Apple Watch",
-        image: image6
+        image: image6,
+        shipping: "free"
     },
     {
         id: 7,
         price: 950,
         name: "Apple Watch",
-        image: image7
+        image: image7,
+        shipping: "free"
     },
     {
         id: 8,
         price: 1050,
         name: "Apple Watch",
-        image: image8
+        image: image8,
+        shipping: "free"
     },
     {
         id: 9,
         price: 1150,
         name: "Apple Watch",
-        image: image9
+        image: image9,
+        shipping: "free"
     }
 ]

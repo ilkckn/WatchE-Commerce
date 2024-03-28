@@ -24,7 +24,7 @@ function Home() {
   }, [currentSlide, slides.length]);
 
   return (
-    <div className="homeContainer">
+      <div className="homeContainer">
       <div className="info">
         <h1>huge selection</h1>
         <h4>Discount prices and online exclusive offers</h4>

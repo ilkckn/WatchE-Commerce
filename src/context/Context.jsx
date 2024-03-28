@@ -1,9 +1,13 @@
 import React, { createContext, useReducer } from "react";
 import { data } from "../womenData";
 import { data1 } from "../menData";
+import ReactModal from "react-modal";
+import Modal from "../components/Modal";
 
 const initialState = {
   cart: [],
+  modelIsOpen: false,
+  modalContent: ""
 };
 
 export const Context = createContext();
@@ -48,6 +52,20 @@ const reducer = (state, action) => {
           .filter(item => item.quantity > 0),
       };
 
+      case "openModal": {
+        return {
+          ...state,
+          modalIsOpen: true,
+          modalContent: action.payload,
+        };
+      }
+      case "closeModal": {
+        return {
+          ...state,
+          modalIsOpen: false,
+        };
+      }
+
     default:
       return state;
   }
@@ -59,6 +77,7 @@ function ContextProvider({ children }) {
   return (
     <Context.Provider value={{ data, data1, state, dispatch }}>
       {children}
+      <Modal />
     </Context.Provider>
   );
 }

@@ -1,4 +1,4 @@
-import { RiArrowDownSLine } from "react-icons/ri";
+
 import "../styles/Women.css";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
