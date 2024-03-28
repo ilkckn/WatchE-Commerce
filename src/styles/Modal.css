@@ -1,0 +1,87 @@
+.modalInfo {
+
+}
+
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.close {
+    padding: 1rem 4rem;
+    border: 2px solid rgb(16, 47, 98);
+    background-color: transparent;
+    border-radius: 5px;
+    color: rgb(16, 47, 98);
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    transition: color .3s ease-in-out;
+}
+
+.close::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(16, 47, 98);
+    z-index: -1;
+    transition: transform .3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+}
+
+.close:hover::before,
+.close:focus::before {
+    transform: scaleX(1);
+}
+
+.delete {
+    padding: 1rem 10rem;
+    border: 2px solid rgb(227, 43, 43);
+    background-color: transparent;
+    border-radius: 5px;
+    color: rgb(227, 43, 43);
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    transition: color .3s ease-in-out;
+}
+
+.delete::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(227, 43, 43);
+    z-index: -1;
+    transition: transform .3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.delete:hover,
+.delete:focus {
+    color: white;
+}
+
+.delete:hover::before,
+.delete:focus::before {
+    transform: scaleX(1);
+}

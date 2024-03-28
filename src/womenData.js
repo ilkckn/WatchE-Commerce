@@ -14,62 +14,71 @@ export const data = [
         price: 1300,
         name: "Vacheron Constantin",
         image: image1,
-        shipping: "free"
+        shipping: "free",
+        product: "leather"
     },
     {
         id: 20,
         price: 1500,
         name: "Jaguar",
         image: image2,
-        shipping: "free"
+        shipping: "free",
+        product: "diamond"
     },
     {
         id: 30,
         price: 1600,
         name: "Rotary Kingston",
         image: image3,
-        shipping: "free"
+        shipping: "free",
+        product: ["diamond", "metal"]
     },
     {
         id: 40,
         price: 1350,
         name: "Vacheron Constantin Diamond",
         image: image4,
-        shipping: "free"
+        shipping: "free",
+        product: "leather"
     },
     {
         id: 50,
         price: 1450,
         name: "Sylvi TIMEGRAPHER Black RG",
         image: image5,
-        shipping: "free"
+        shipping: "free",
+        product: "metal"
     },
     {
         id: 60,
         price: 850,
         name: "Apple Watch",
         image: image6,
-        shipping: "free"
+        shipping: "free",
+        product: "apple"
     },
     {
         id: 70,
         price: 950,
         name: "Apple Watch",
         image: image7,
-        shipping: "free"
+        shipping: "free",
+        product: "apple"
     },
     {
         id: 80,
         price: 1050,
         name: "Apple Watch",
         image: image8,
-        shipping: "free"
+        shipping: "free",
+        product: "apple"
     },
     {
         id: 90,
         price: 1150,
         name: "Apple Watch",
         image: image9,
-        shipping: "free"
+        shipping: "free",
+        product: ["apple", "metal"]
     }
 ]

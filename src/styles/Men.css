@@ -1,136 +1,180 @@
 .menContainer {
-    width: 100%;
-    height: calc(100vh - 10rem);
-    margin-top: 10rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  /* height: calc(100vh - 10rem); */
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  background-color: rgb(252, 254, 255);
 }
 
 .imageFrame1 {
-    width: 40rem;
-    height: 50rem;
+  width: 40rem;
+  height: 50rem;
 }
 
 .imageFrame1 .watchImage1 {
-    width: 40rem;
-    height: 50rem;
+  width: 40rem;
+  height: 50rem;
 }
 
 .menContainer .productBox1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 150rem;
-    height: calc(100vh - 10rem);
-    margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 150rem;
+  margin-top: 5rem;
 }
 
 .productBox1 .ulProduct1 {
-    width: 40rem;
-    height: 65rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
+  width: 40rem;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .ulProduct1 .product1 {
-    width: 40rem;
-    height: 65rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
+  width: 40rem;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
 }
 
 .product1 .productInfo1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 16px;
-    gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 16px;
+  gap: 1rem;
 }
 
 .product1 .productInfo1 .productName1 {
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-    text-transform: capitalize;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
 .product1 .productInfo1 .price1 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+
+.buttonContainer {
+  position: relative;
+}
+
+.buttonContainer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonContainer button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .product1 .productInfo1 button {
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    padding: 1rem 1.7rem;
-    border: 1px solid rgb(37, 92, 148);
-    border-radius: 5px;
-    background-color: rgb(37, 92, 148);
-    color: white;
-    cursor: pointer;
-    transition: all .4s ease;
-    font-size: 1.2rem;
-    font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1rem 1.7rem;
+  border: 1px solid rgb(37, 92, 148);
+  border-radius: 5px;
+  background-color: rgb(37, 92, 148);
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.product1 .productInfo1 button.disabled {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1rem 1.7rem;
+  border: 1px solid rgb(37, 92, 148);
+  border-radius: 5px;
+  background-color: rgb(37, 92, 148);
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.product1 .productInfo1 button.disabled:hover {
+  background-color: rgb(37, 92, 148);
+  border: 1px solid rgb(37, 92, 148);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .product1 .productInfo1 button:hover {
-    background-color: transparent;
-    border: 1px solid rgb(37, 92, 148);
-    color: rgb(37, 92, 148);
-    font-size: 1.2rem;
-    font-weight: 600;
+  background-color: transparent;
+  border: 1px solid rgb(37, 92, 148);
+  color: rgb(37, 92, 148);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* --------------------------------------------- */
 
 .productTypesContainer {
-    width: 25rem;
-    height: 60rem;
-    margin-left: 8rem;
-    margin-right: 5rem;
-    position: sticky;
-    top: 10rem;
-    padding: 3rem 0;
+  width: 25rem;
+  height: 60rem;
+  margin-top: 20rem;
+  margin-left: 8rem;
+  margin-right: 5rem;
+  position: sticky;
+  top: 10rem;
+  padding: 3rem 0;
 }
 
 .productTypesContainer .filter {
-    font-size: 2rem;
-    font-weight: lighter;
-    letter-spacing: 1.5px;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
 }
 
 .productTypesContainer p {
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .productTypesContainer .downArrow {
-    font-size: 2.5rem;
-    font-weight: lighter;
+  font-size: 2.5rem;
+  font-weight: lighter;
 }
 
 .productTypesContainer a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
-.productTypesContainer .sportProducts, .classicProducts, .appleProducts, .diamondProducts, .leatherStrapProducts, .metalStrapProducts {
-    width: 90%;
-    height: 7rem;
-    border: 1px solid white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
+.productTypesContainer .sportProducts,
+.classicProducts,
+.appleProducts,
+.diamondProducts,
+.leatherStrapProducts,
+.metalStrapProducts {
+  width: 90%;
+  height: 7rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }

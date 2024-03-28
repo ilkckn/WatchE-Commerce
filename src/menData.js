@@ -14,62 +14,71 @@ export const data1 = [
         price: 1300,
         name: "Hanboro",
         image: image1,
-        shipping: "free"
+        shipping: "free",
+        product: "classic"
     },
     {
         id: 2,
         price: 1500,
         name: "Huawei",
         image: image2,
-        shipping: "free"
+        shipping: "free",
+        product: "metal"
     },
     {
         id: 3,
         price: 1600,
         name: "Oozoo",
         image: image3,
-        shipping: "free"
+        shipping: "free",
+        product: "sport"
     },
     {
         id: 4,
         price: 1350,
         name: "Candino",
         image: image4,
-        shipping: "free"
+        shipping: "free",
+        product: "classic"
     },
     {
         id: 5,
         price: 1450,
         name: "Festina",
         image: image5,
-        shipping: "free"
+        shipping: "free",
+        product: "metal"
     },
     {
         id: 6,
         price: 850,
         name: "Apple Watch",
         image: image6,
-        shipping: "free"
+        shipping: "free",
+        product: "apple"
     },
     {
         id: 7,
         price: 950,
         name: "Apple Watch",
         image: image7,
-        shipping: "free"
+        shipping: "free",
+        product: "apple"
     },
     {
         id: 8,
         price: 1050,
         name: "Apple Watch",
         image: image8,
-        shipping: "free"
+        shipping: "free",
+        product: "apple"
     },
     {
         id: 9,
         price: 1150,
         name: "Apple Watch",
         image: image9,
-        shipping: "free"
+        shipping: "free",
+        product: "apple"
     }
 ]

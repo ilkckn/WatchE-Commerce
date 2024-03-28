@@ -2,12 +2,13 @@ import React, { createContext, useReducer } from "react";
 import { data } from "../womenData";
 import { data1 } from "../menData";
 import ReactModal from "react-modal";
-import Modal from "../components/Modal";
+
+ReactModal.setAppElement("#root");
 
 const initialState = {
   cart: [],
   modelIsOpen: false,
-  modalContent: ""
+  modalContent: "",
 };
 
 export const Context = createContext();
@@ -66,6 +67,13 @@ const reducer = (state, action) => {
         };
       }
 
+      case "deleteProduct": {
+        return {
+          ...state,
+          cart: state.cart.filter(item => item.id !== action.payload.id)
+        }
+      }
+
     default:
       return state;
   }
@@ -77,7 +85,6 @@ function ContextProvider({ children }) {
   return (
     <Context.Provider value={{ data, data1, state, dispatch }}>
       {children}
-      <Modal />
     </Context.Provider>
   );
 }
