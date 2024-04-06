@@ -15,7 +15,7 @@ export const data1 = [
         name: "Hanboro",
         image: image1,
         shipping: "free",
-        product: "classic"
+        product: ["classic", "leather"]
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ export const data1 = [
         name: "Oozoo",
         image: image3,
         shipping: "free",
-        product: "sport"
+        product: ["sport", "leather"]
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ export const data1 = [
         name: "Candino",
         image: image4,
         shipping: "free",
-        product: "classic"
+        product: ["classic", "leather"]
     },
     {
         id: 5,
@@ -71,7 +71,7 @@ export const data1 = [
         name: "Apple Watch",
         image: image8,
         shipping: "free",
-        product: "apple"
+        product: ["apple", "leather"]
     },
     {
         id: 9,

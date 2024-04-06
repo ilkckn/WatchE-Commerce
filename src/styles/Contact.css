@@ -1,0 +1,98 @@
+.contactContainer {
+    width: 100%;
+    margin-top: 10rem;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contactContainer .contactUsHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactContainer .contactUsHeader h1 {
+    font-size: 7rem;
+    font-weight: 400;
+    font-family: "Crimson Text", serif;
+    text-transform: capitalize;
+}
+
+.contactContainer .contactUsHeader p {
+    font-size: 1.4rem;
+    width: 50%;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .required {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;    
+}
+
+.form .required p {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.form .required .starIcon {
+    position: absolute;
+    top: 0;
+    left: 45.5%;
+    font-size: .8rem;
+    color: red;
+}
+
+form {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------------------------- */
+form .name {
+    display: flex;
+    gap: 2rem;
+}
+
+form .name .firstName, .lastName {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+/* ----------------------------------------------- */
+
+form .email-phone {
+    display: flex;
+    gap: 2rem;
+}
+
+form .email-phone .email, .phone {
+    display: flex;
+    flex-direction: column;
+}
+/* --------------------------------------------- */
+
+form .country-zip {
+    display: flex;
+    gap: 2rem;
+}
+
+form .country-zip .country, .zip {
+    display: flex;
+    flex-direction: column;
+}

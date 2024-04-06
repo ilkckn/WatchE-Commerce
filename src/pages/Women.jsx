@@ -7,7 +7,7 @@ import { Context } from "../context/Context";
 function Women() {
   const { data, dispatch } = useContext(Context);
   const [addedToCart, setAddedToCart] = useState(false);
-  const [ filter, setFilter ] = useState("");
+  const [filter, setFilter] = useState("");
 
   function addToCart(prod) {
     dispatch({ type: "addToCart", payload: prod });
@@ -15,11 +15,13 @@ function Women() {
   }
 
   function handleFilterClick(filterName) {
-    setFilter(filterName)
+    setFilter(filterName);
   }
 
+
   return (
-    <div className="womenContainer">
+    <div className="womenContainer" id="women">
+      
       <div className="productTypesContainer">
         <p className="filter">filter</p>
         <div className="sportProducts">
@@ -41,6 +43,7 @@ function Women() {
           <NavLink to="#"><p onClick={() => handleFilterClick("metal")}>metal strap watches</p></NavLink>
         </div>
       </div>
+
       <div className="productBox">
         {data
           .filter((prod) => {

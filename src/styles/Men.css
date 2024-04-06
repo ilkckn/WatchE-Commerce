@@ -97,27 +97,7 @@
   font-weight: 100;
 }
 
-.product1 .productInfo1 button.disabled {
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 1rem 1.7rem;
-  border: 1px solid rgb(37, 92, 148);
-  border-radius: 5px;
-  background-color: rgb(37, 92, 148);
-  color: white;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  font-size: 1.2rem;
-  font-weight: 100;
-}
 
-.product1 .productInfo1 button.disabled:hover {
-  background-color: rgb(37, 92, 148);
-  border: 1px solid rgb(37, 92, 148);
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 100;
-}
 
 .product1 .productInfo1 button:hover {
   background-color: transparent;

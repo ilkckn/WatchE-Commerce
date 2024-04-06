@@ -43,9 +43,9 @@ function Cart() {
         {state.cart.length > 0 ? (
           <>
             <div className="total">
-              <h2 className="totalPriceHeader">your order</h2>
               <div className="totalInfo">
                 <div className="totalItem">
+                  <h2 className="totalPriceHeader">your order</h2>
                   <ul>
                     {state.cart.map((pro) => (
                       <li key={pro.id}>

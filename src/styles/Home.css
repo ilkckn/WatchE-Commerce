@@ -1,62 +1,526 @@
 .homeContainer {
-    width: 100%;
-    height: calc(100vh - 10rem);
-    margin-top: 10rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    background-color: rgb(252, 254, 255);
+  width: 100%;
+ 
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: rgb(252, 254, 255);
 }
 
 .homeImage img {
-    width: 60rem;
+  width: 60rem;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
 }
 
 .homeContainer .info {
-    height: 50rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 6rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 
 .info h1 {
-    font-size: 7.5rem;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-    color: rgb(20, 114, 164);
+  font-family: "Zilla Slab", serif;
+  font-size: 7.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: rgb(10, 28, 60);
 }
 
 .info h4 {
-    font-size: 3rem;
-    letter-spacing: 1px;
-    color: rgba(75, 75, 75, 0.869);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight:500;
+  letter-spacing: 1px;
+  color: rgba(75, 75, 75, 0.869);
 }
 
 .info p {
-    width: 60rem;
-    font-size: 1.5rem;
-    line-height: 22px;
-    letter-spacing: .5px;
-    color: black;
+  font-family: "Montserrat", sans-serif;
+  width: 60rem;
+  font-size: 1.5rem;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: rgb(8, 20, 40);
 }
 
 .info .button .btn {
-    padding: 1.5rem 4rem ;
-    font-size: 2rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-top: 2rem;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(37, 92, 148);
-    color: white;
-    cursor: pointer;
-    transition: all .6s ease;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(7, 36, 64);
+  color: white;
+  cursor: pointer;
+  transition: all 0.6s ease;
 }
 
 .info .button .btn:hover {
-    background-color: rgb(26, 97, 212);
+  background-color: rgb(26, 97, 212);
+}
+
+/* ------------------------------------------ */
+
+
+.body1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body1 .image,
+.body1 .text {
+  flex: 1 1 50%; 
+  max-width: 50%;
+}
+
+.body1 .image img {
+  width: 100%;
+  height: auto; 
+}
+
+.body1 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(16, 16, 16);
+  padding: 2rem; 
+}
+
+.body1 .text h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+
+.body1 .text p {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: .5px;
+  line-height: 2rem;
+  color: white;
+  padding: 0 4rem;
+}
+
+.body1 .text button {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 5rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------- */
+
+.body2 {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.body2 .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10.5rem;
+  margin-bottom: 3rem;
+}
+
+.body2 .header h1 {
+  font-size: 4rem;
+  font-family: "Josefin Slab", serif;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.body2 .header span {
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  width: 142rem;
+  height: .3rem;
+  background-color: rgb(16, 16, 16);
+}
+
+
+/* ---------------------------------------------- */
+
+
+.body3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(20, 114, 164, .1);
+}
+
+.body3 .news {
+  padding: 4rem 0;
+}
+
+.body3 p {
+  font-family: "Josefin Slab", serif;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+.body3 .channels {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+}
+
+.body3 .channels .p1 {
+  font-size: 3.5rem;
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+}
+
+.body3 .channels .p2 img {
+    width: 21rem;
+}
+
+.body3 .channels .p3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+}
+
+.body3 .channels .p4 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "Libre Caslon Text", serif;
+  text-transform: uppercase;
+}
+
+
+/* ------------------------------------ */
+
+.body4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body4 .image,
+.body4 .text {
+  flex: 1 1 50%; 
+  max-width: 50%;
+}
+
+.body4 .image img {
+  width: 100%;
+  height: 50rem;
+}
+
+.body4 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(16, 16, 16);
+  height: 50rem;
+}
+
+.body4 .text h1 {
+  width: 40rem;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+
+.body4 .text p {
+  width: 40rem;
+  font-family: "Josefin Slab", serif;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: .5px;
+  line-height: 2rem;
+  color: white;
+}
+
+/* --------------------------------------------- */
+
+
+.body5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Varsayılan olarak yatay sıralama */
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.body5 .texts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.body5 .text1,
+.body5 .text2,
+.body5 .text3 {
+  width: 30rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+
+.body5 .text2 {
+  height: 179px;
+}
+
+.body5 .text1 {
+  border-right: 1px solid rgb(8, 20, 40);
+}
+
+.body5 .text2 {
+  border-right: 1px solid rgb(8, 20, 40);
+  padding-right: 3rem;
+}
+
+.body5 .text1 h1,
+.body5 .text2 h1,
+.body5 .text3 h1 {
+  font-size: 2rem;
+  color: rgb(8, 20, 40);
+}
+
+.body5 .text1 p,
+.body5 .text2 p,
+.body5 .text3 p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: start;
+}
+
+.body5 button {
+  width: 25rem;
+  height: 4.5rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1.5px solid rgb(8, 20, 40);
+  background-color: transparent;
+  color: rgb(8, 20, 40);
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  transition: color .3s ease-in-out;
+}
+
+.body5 button::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(8, 20, 40);
+  z-index: -1;
+  transition: transform .3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.body5 button:hover,
+.body5 button:focus {
+  color: white;
+}
+
+.body5 button:hover::before,
+.body5 button:focus::before {
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .homeContainer {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+  }
+  .homeContainer .info {
+    width: 85%;
+    margin: 0;
+    gap: 1.5rem;
+  }
+  .homeContainer .info p {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+  .info h1 {
+    font-size: 7.5rem;
+    text-align: center;
+  }
+
+  .info h4 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .homeImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .homeImage img {
+    width: 60rem;
+  }
+  .info .button {
+    display: flex;
+    justify-content: center;
+  }
+  .info .button .btn {
+    padding: 3rem 6rem;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+  }
+
+  .body1 .image,
+  .body1 .text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .body4 .image,
+  .body4 .text {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+
+  .collections .prev {
+    left: 7%;
+  }
+
+  .collections .next {
+    right: 7%;
+  }
+
+  .body5 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .body5 .text1 {
+    border-right: none;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgb(16, 16, 16);
+  }
+  
+  .body5 .text2 {
+    border-right: none;
+    border-bottom: 1px solid rgb(16, 16, 16);
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .homeContainer {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+  }
+  .homeContainer .info {
+    width: 90%;
+    height: 40rem;
+    margin-bottom: 0;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .homeContainer .info p {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .info h1 {
+    font-size: 3rem;
+  }
+  .info h4 {
+    font-size: 2rem;
+  }
+  .homeImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .homeImage img {
+    width: 30rem;
+  }
+  .info .button {
+    display: flex;
+    justify-content: center;
+  }
+  .info .button .btn {
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  .collections .prev {
+    left: 5%;
+  }
+
+  .collections .next {
+    right: 5%;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from "react";
+import React, { createContext, useState, useReducer } from "react";
 import { data } from "../womenData";
 import { data1 } from "../menData";
 import ReactModal from "react-modal";
@@ -9,6 +9,7 @@ const initialState = {
   cart: [],
   modelIsOpen: false,
   modalContent: "",
+  filter: "", 
 };
 
 export const Context = createContext();
@@ -53,26 +54,33 @@ const reducer = (state, action) => {
           .filter(item => item.quantity > 0),
       };
 
-      case "openModal": {
-        return {
-          ...state,
-          modalIsOpen: true,
-          modalContent: action.payload,
-        };
-      }
-      case "closeModal": {
-        return {
-          ...state,
-          modalIsOpen: false,
-        };
-      }
+    case "openModal": {
+      return {
+        ...state,
+        modalIsOpen: true,
+        modalContent: action.payload,
+      };
+    }
+    case "closeModal": {
+      return {
+        ...state,
+        modalIsOpen: false,
+      };
+    }
 
-      case "deleteProduct": {
-        return {
-          ...state,
-          cart: state.cart.filter(item => item.id !== action.payload.id)
-        }
+    case "deleteProduct": {
+      return {
+        ...state,
+        cart: state.cart.filter(item => item.id !== action.payload.id)
       }
+    }
+
+    case "setFilter": { 
+      return {
+        ...state,
+        filter: action.payload,
+      };
+    }
 
     default:
       return state;
@@ -81,9 +89,39 @@ const reducer = (state, action) => {
 
 function ContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [search, setSearch] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    if (search.length > 0) {
+      setSearch("");
+    } else {
+      alert("Please type the word you want to search!");
+    }
+  }
+
+  function handleChange(e) {
+    setSearch(e.target.value);
+  }
+
+  function handleFilterClick(filterName) {
+    dispatch({ type: "setFilter", payload: filterName }); 
+  }
 
   return (
-    <Context.Provider value={{ data, data1, state, dispatch }}>
+    <Context.Provider
+      value={{
+        data,
+        data1,
+        state,
+        search,
+        dispatch,
+        handleChange,
+        handleSubmit,
+        handleFilterClick,
+      }}
+    >
       {children}
     </Context.Provider>
   );

@@ -1,0 +1,149 @@
+.aboutContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.aboutContainer .image-header img {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutContainer .image-header {
+    margin-top: 10rem;
+    width: 100%;
+    height: 55rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutContainer .image-header .about-image-info {
+    
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-header .about-image-info .link1 {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.image-header .about-image-info span {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.image-header .ourStory {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.image-header .ourStory h1 {
+    letter-spacing: 3px;
+    font-family: "Crimson Text", serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: white;
+    font-size: 8rem;
+    margin-top: 3rem;
+}
+
+.image-header p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+.aboutContainer .aboutInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.aboutContainer .aboutInformation .aboutMyWatch, .whyChooseMyWatch, .unrivaledSelection, .guaranteedAuthenticity, .superiorWatchmakingService, .meetOurTeam, .ourGlobalFootprint, .joinOurTeam, .getInTouch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 40%;
+    text-align: center;
+}
+
+.aboutContainer .aboutInformation .aboutMyWatch h1, .whyChooseMyWatch h1, .unrivaledSelection h1, .guaranteedAuthenticity h1, .superiorWatchmakingService h1, .meetOurTeam h1, .ourGlobalFootprint h1, .joinOurTeam h1, .getInTouch h1 {
+    font-size: 5rem;
+    font-family: "Zilla Slab", serif;
+    font-weight: 500;
+}
+
+.aboutContainer .aboutInformation .aboutMyWatch p, .whyChooseMyWatch p, .unrivaledSelection p, .guaranteedAuthenticity p, .superiorWatchmakingService p, .meetOurTeam p, .ourGlobalFootprint p, .joinOurTeam p, .getInTouch p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.meetOurTeam .aboutInfoLinks, .ourGlobalFootprint .aboutInfoLinks, .joinOurTeam .aboutInfoLinks, .getInTouch .aboutInfoLinks {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: rgb(16, 16, 16);
+}
+
+@media (max-width: 360px) {
+    .image-header .ourStory h1 {
+        letter-spacing: 3px;
+        font-family: "Crimson Text", serif;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: rgb(205, 205, 205);
+        font-size: 6rem;
+        margin-top: 3rem;
+    }
+    
+    .image-header p {
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: white;
+    }
+
+    .aboutContainer .image-header .about-image-info {
+        width: 25rem;
+        position: absolute;
+        left: 55%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .image-header .ourStory {
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+

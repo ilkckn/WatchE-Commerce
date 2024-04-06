@@ -1,57 +1,89 @@
-import React from "react";
 import { RiShoppingCartLine } from "react-icons/ri";
+import { BiMenuAltRight } from "react-icons/bi";
 import "../styles/Navbar.css";
-import logo from "../assets/image/logo.png";
-import { NavLink, Link } from "react-router-dom";
-import { useContext } from "react";
+import logo from "../assets/image/logo1.png";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useContext, useState } from "react";
 import { Context } from "../context/Context";
+import { CiSearch } from "react-icons/ci";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const { state, dispatch } = useContext(Context);
+
   const cartItemCount = state.cart.reduce(
     (acc, curr) => acc + curr.quantity,
     0
   );
+
   return (
     <>
       <div className="container">
-        <div className="logo">
-          <NavLink className="img" to="/">
-            <img
-              src={logo}
-              alt="Logo"
-              style={{
-                width: "150px",
-                height: "40px",
-                backgroundColor: "transparent",
-              }}
-            />
-          </NavLink>
+        <div className="logo-search">
+          <div className="logo">
+            <NavLink className="img" to="/">
+              <img
+                src={logo}
+                alt="Logo"
+                style={{
+                  width: "90px",
+                  height: "60px",
+                  backgroundColor: "transparent",
+                }}
+              />
+            </NavLink>
+          </div>
+          <div className={`search-cart-container ${isOpen ? "open" : ""}`}>
+            <div className="search">
+              <Link className="searchLink" to="/search">
+                <p>Search</p>
+                <div className="searchInput"></div>
+                <CiSearch className="searchIcon" />
+              </Link>
+            </div>
+          </div>
         </div>
+
         <div className="links">
-          <ul>
+          <ul className={isOpen ? "open" : ""}>
             <li>
-              <NavLink className="link" to="/">
+              <NavLink className="link" to="/" smooth={true} duration={1000}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/about">
+              <NavLink
+                className="link"
+                to="/about"
+                smooth={true}
+                duration={600}
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/women">
+              <NavLink
+                className="link"
+                to="/women"
+                smooth={true}
+                duration={1000}
+              >
                 Women
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/men">
+              <NavLink className="link" to="/men" smooth={true} duration={1000}>
                 Men
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/contact">
+              <NavLink
+                className="link"
+                to="/contact"
+                smooth={true}
+                duration={1000}
+              >
                 Contact
               </NavLink>
             </li>
@@ -68,6 +100,13 @@ function Navbar() {
               }
             </Link>
           </div>
+        </div>
+
+        <div className="hamburgerMenu">
+          <BiMenuAltRight
+            className="burger"
+            onClick={() => setIsOpen(!isOpen)}
+          />
         </div>
       </div>
     </>

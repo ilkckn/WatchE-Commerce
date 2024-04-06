@@ -7,6 +7,7 @@ import Women from "./pages/Women";
 import Men from "./pages/Men";
 import Contact from "./pages/Contact";
 import Cart from "./components/Cart";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/women" element={<Women />} />
         <Route path="/men" element={<Men />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart/>} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </>
   );
