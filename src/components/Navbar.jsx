@@ -2,15 +2,19 @@ import { RiShoppingCartLine } from "react-icons/ri";
 import { BiMenuAltRight } from "react-icons/bi";
 import "../styles/Navbar.css";
 import logo from "../assets/image/logo1.png";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import { useContext, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useContext, useState, useEffect } from "react";
 import { Context } from "../context/Context";
 import { CiSearch } from "react-icons/ci";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { state, dispatch } = useContext(Context);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [location.pathname]);
 
   const cartItemCount = state.cart.reduce(
     (acc, curr) => acc + curr.quantity,
@@ -73,7 +77,12 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/men" smooth={true} duration={1000}>
+              <NavLink
+                className="link"
+                to="/men"
+                smooth={true}
+                duration={1000}
+              >
                 Men
               </NavLink>
             </li>
@@ -90,14 +99,12 @@ function Navbar() {
           </ul>
           <div className="cartBase">
             <Link className="cart" to="/cart">
-              {
-                <>
-                  <RiShoppingCartLine id="cart" />
-                  {cartItemCount > 0 && (
-                    <span className="cartItemCount">{cartItemCount}</span>
-                  )}
-                </>
-              }
+              <>
+                <RiShoppingCartLine id="cart" />
+                {cartItemCount > 0 && (
+                  <span className="cartItemCount">{cartItemCount}</span>
+                )}
+              </>
             </Link>
           </div>
         </div>
