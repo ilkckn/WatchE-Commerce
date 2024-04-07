@@ -19,36 +19,36 @@ function Men() {
 
   return (
     <div className="menContainer" id="men">
-      <div className="productTypesContainer">
-        <p className="filter">filter</p>
-        <div className="sportProducts">
+      <div className="productTypesContainer1">
+        <p className="filter1">filter</p>
+        <div className="sportProducts1">
           <NavLink to="#">
             <p onClick={() => handleFilterClick("sport")}>sport watches</p>
           </NavLink>
         </div>
-        <div className="classicProducts">
+        <div className="classicProducts1">
           <NavLink to="#">
             <p onClick={() => handleFilterClick("classic")}>classic watches</p>
           </NavLink>
         </div>
-        <div className="appleProducts">
+        <div className="appleProducts1">
           <NavLink to="#">
             <p onClick={() => handleFilterClick("apple")}>apple watches</p>
           </NavLink>
         </div>
-        <div className="diamondProducts">
+        <div className="diamondProducts1">
           <NavLink to="#">
             <p onClick={() => handleFilterClick("diamond")}>diamond watches</p>
           </NavLink>
         </div>
-        <div className="leatherStrapProducts">
+        <div className="leatherStrapProducts1">
           <NavLink to="#">
             <p onClick={() => handleFilterClick("leather")}>
               leather strap watches
             </p>
           </NavLink>
         </div>
-        <div className="metalStrapProducts">
+        <div className="metalStrapProducts1">
           <NavLink to="#">
             <p onClick={() => handleFilterClick("metal")}>
               metal strap watches

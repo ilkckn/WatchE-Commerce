@@ -8,6 +8,7 @@ import image3 from "../assets/image/watch-pair2.png";
 import image4 from "../assets/image/watch-pair3.png";
 import bodyImage from "../assets/image/home-image.jpg";
 import bodyImage1 from "../assets/image/home-image1.jpg";
+import bodyImage2 from "../assets/image/home-image2.jpg";
 import Slider from "../components/Slider/Slider";
 import { NavLink } from "react-router-dom";
 
@@ -30,7 +31,6 @@ function Home() {
 
   return (
     <div className="homeContainer" id="home">
-      
       <div className="info">
         <h1>huge selection</h1>
         <h4>Discount prices and online exclusive offers</h4>
@@ -142,6 +142,27 @@ function Home() {
         </NavLink>
       </div>
 
+      <div className="body6">
+        <div className="bcg">
+          <div className="bcgImage">
+            <img src={bodyImage2} alt="" />
+          </div>
+
+          <div className="headers-subscribe">
+            <div className="headers">
+              <h1>Enter The World Of Hodinkee</h1>
+              <p>Read. Watch. Shop. Learn. Trade. Insure. All in one place.</p>
+            </div>
+
+            <div className="subscribe">
+              <form className="subscribeForm">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

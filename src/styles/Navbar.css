@@ -90,7 +90,7 @@ li {
     padding: .9rem .5rem;
     color: rgb(9, 51, 93);
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-decoration: none;
     letter-spacing: 2px;
     transition: all .3s ease;
@@ -100,7 +100,7 @@ li {
 .link:hover {
     border-bottom: 1px solid rgb(2, 31, 77);
     color: rgb(2, 31, 77);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 a.img.active {
@@ -114,7 +114,7 @@ a.img.active {
 }
 
 .cart {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: rgb(6, 46, 92);
 }
 
@@ -124,9 +124,9 @@ a.img.active {
 
 .cartItemCount {
     position: absolute;
-    top: 0rem;
+    top: -.5rem;
     right: -.7rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 

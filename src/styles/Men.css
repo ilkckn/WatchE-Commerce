@@ -1,6 +1,5 @@
 .menContainer {
   width: 100%;
-  /* height: calc(100vh - 10rem); */
   margin-top: 10rem;
   display: flex;
   justify-content: flex-start;
@@ -10,13 +9,13 @@
 }
 
 .imageFrame1 {
-  width: 40rem;
-  height: 50rem;
+  width: 30rem;
+  height: 40rem;
 }
 
 .imageFrame1 .watchImage1 {
-  width: 40rem;
-  height: 50rem;
+  width: 30rem;
+  height: 40rem;
 }
 
 .menContainer .productBox1 {
@@ -24,7 +23,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 150rem;
-  margin-top: 5rem;
+  margin-top:10rem;
 }
 
 .productBox1 .ulProduct1 {
@@ -58,7 +57,6 @@
 .product1 .productInfo1 .productName1 {
   font-size: 2.2rem;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 .product1 .productInfo1 .price1 {
@@ -66,38 +64,19 @@
   letter-spacing: 1px;
 }
 
-
-.buttonContainer {
-  position: relative;
-}
-
-.buttonContainer button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.buttonContainer button.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 .product1 .productInfo1 button {
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   padding: 1rem 1.7rem;
   border: 1px solid rgb(37, 92, 148);
   border-radius: 5px;
   background-color: rgb(37, 92, 148);
   color: white;
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: all .4s ease;
   font-size: 1.2rem;
   font-weight: 100;
 }
-
-
 
 .product1 .productInfo1 button:hover {
   background-color: transparent;
@@ -109,46 +88,43 @@
 
 /* --------------------------------------------- */
 
-.productTypesContainer {
+.productTypesContainer1 {
   width: 25rem;
-  height: 60rem;
-  margin-top: 20rem;
-  margin-left: 8rem;
+  height: 70rem;
+  margin-left: 5rem;
   margin-right: 5rem;
+  margin-top: 20rem;
   position: sticky;
   top: 10rem;
-  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.productTypesContainer .filter {
+.productTypesContainer1 .filter1 {
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: 400;
   letter-spacing: 1.5px;
 }
 
-.productTypesContainer p {
+.productTypesContainer1 p {
   font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  
 }
 
-.productTypesContainer .downArrow {
+.productTypesContainer1 .downArrow {
   font-size: 2.5rem;
   font-weight: lighter;
 }
 
-.productTypesContainer a {
+.productTypesContainer1 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-.productTypesContainer .sportProducts,
-.classicProducts,
-.appleProducts,
-.diamondProducts,
-.leatherStrapProducts,
-.metalStrapProducts {
+.productTypesContainer1 .sportProducts1, .classicProducts1, .appleProducts1, .diamondProducts1, .leatherStrapProducts1, .metalStrapProducts1 {
   width: 90%;
   height: 7rem;
   border: 1px solid white;
@@ -157,4 +133,73 @@
   align-items: center;
   color: rgb(0, 0, 0);
   border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 1200px) {
+  .menContainer {
+      width: 100%;
+      margin-top: 10rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+  }
+  .menContainer .productBox1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin-top: 0;
+  }
+  .productTypesContainer1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      height: 20rem;
+      margin-left: 0;
+      margin-top: 0;
+      padding-top: rem;
+      background-color: white;
+  }
+  .productTypesContainer1 .filter1 {
+      display: none;
+  }
+
+  .productTypesContainer1 p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+
+  .productTypesContainer1 .sportProducts1, .classicProducts1, .appleProducts1, .diamondProducts1, .leatherStrapProducts1, .metalStrapProducts1 {
+      text-align: center;
+      width: 30%;
+      height: 5rem;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      border-bottom: 1px solid rgb(0, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .productTypesContainer1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      height: 20rem;
+      margin-left: 0;
+      margin-top: 0;
+      background-color: white;
+  }
 }

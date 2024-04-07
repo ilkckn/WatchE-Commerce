@@ -8,6 +8,7 @@ import Men from "./pages/Men";
 import Contact from "./pages/Contact";
 import Cart from "./components/Cart";
 import Search from "./components/Search";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/search" element={<Search />} />
       </Routes>
+      <Footer />
     </>
   );
 }

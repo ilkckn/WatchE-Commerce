@@ -1,6 +1,5 @@
 .homeContainer {
   width: 100%;
- 
   margin-top: 10rem;
   display: flex;
   justify-content: space-evenly;
@@ -252,7 +251,7 @@
 }
 
 .body4 .text h1 {
-  width: 40rem;
+  width: 70%;
   text-align: center;
   font-family: "Josefin Slab", serif;
   font-size: 4rem;
@@ -263,7 +262,7 @@
 
 .body4 .text p {
   width: 40rem;
-  font-family: "Josefin Slab", serif;
+  font-weight: 200;
   font-size: 1.6rem;
   text-align: center;
   letter-spacing: .5px;
@@ -278,7 +277,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Varsayılan olarak yatay sıralama */
+  flex-direction: column; 
   width: 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -375,16 +374,133 @@
 }
 
 
+/* ---------------------------------------------------------------------- */
+
+
+.body6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.body6 .bcg {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+}
+
+.body6 .bcg .bcgImage img {
+  width: 100%;
+  height: 50rem;
+}
+
+.bcg .headers-subscribe {
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.bcg .headers-subscribe .headers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.bcg .headers-subscribe .headers h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: "Josefin Slab", serif;
+}
+
+.bcg .headers-subscribe .headers p {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.bcg .headers-subscribe .subscribe {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bcg .headers-subscribe .subscribe .subscribeForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.bcg .headers-subscribe .subscribe .subscribeForm input {
+  width: 65%;
+  height: 4rem;
+  padding-left: 1rem;
+  border: 1px solid rgb(16, 16, 16);
+  border-radius: 3px;
+}
+
+.bcg .headers-subscribe .subscribe .subscribeForm button {
+  width: 15%;
+  height: 4rem;
+  border: none;
+  background-color: rgb(26, 97, 212);
+  color: white;
+  border-radius: 3px;
+  letter-spacing: .7px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
 
 
 
 
+
+
+
+
+
+@media (max-width: 1200px) {
+  .bcg .headers-subscribe {
+    height: 100%;
+    width: 100%;
+  }
+  .bcg .headers-subscribe .headers h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: "Josefin Slab", serif;
+  }
+  .bcg .headers-subscribe .subscribe .subscribeForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .bcg .headers-subscribe .subscribe .subscribeForm input {
+    width: 55%;
+    
+  }
+  
+  .bcg .headers-subscribe .subscribe .subscribeForm button {
+    width: 15%;
+  }
+}
 
 
 @media (max-width: 1024px) {
   .homeContainer {
     width: 100%;
-    height: calc(100vh - 10rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,22 +509,22 @@
   }
   .homeContainer .info {
     width: 85%;
-    margin: 0;
+    margin: 5rem;
     gap: 1.5rem;
   }
   .homeContainer .info p {
     width: 100%;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3.5rem;
     text-align: center;
   }
   .info h1 {
-    font-size: 7.5rem;
+    font-size: 6.5rem;
     text-align: center;
   }
 
   .info h4 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
   }
   .homeImage {
@@ -417,15 +533,16 @@
     justify-content: center;
   }
   .homeImage img {
-    width: 60rem;
+    width: 50rem;
+    margin-top: 0;
   }
   .info .button {
     display: flex;
     justify-content: center;
   }
   .info .button .btn {
-    padding: 3rem 6rem;
-    font-size: 2.5rem;
+    padding: 2rem 3rem;
+    font-size: 2rem;
     letter-spacing: 4px;
   }
 
@@ -468,10 +585,35 @@
   }
 }
 
+@media (max-width: 768px) {
+  .bcg .headers-subscribe {
+    height: 100%;
+    width: 100%;
+  }
+  .bcg .headers-subscribe .headers h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: "Josefin Slab", serif;
+  }
+  .bcg .headers-subscribe .subscribe .subscribeForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .bcg .headers-subscribe .subscribe .subscribeForm input {
+    width: 65%;
+    
+  }
+  
+  .bcg .headers-subscribe .subscribe .subscribeForm button {
+    width: 30%;
+  }
+}
+
 @media (max-width: 430px) {
   .homeContainer {
     width: 100%;
-    height: calc(100vh - 10rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -505,6 +647,7 @@
   }
   .homeImage img {
     width: 30rem;
+    margin-top: 0;
   }
   .info .button {
     display: flex;

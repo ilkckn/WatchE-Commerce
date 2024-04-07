@@ -1,11 +1,12 @@
 .contactContainer {
     width: 100%;
     margin-top: 10rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
+    padding-bottom: 5rem;
 }
 
 .contactContainer .contactUsHeader {
@@ -23,76 +24,259 @@
 
 .contactContainer .contactUsHeader p {
     font-size: 1.4rem;
-    width: 50%;
+    width: 60%;
     text-align: center;
     line-height: 2.4rem;
 }
 
 .form {
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .form .required {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
-    width: 100%;    
+    width: 100%;   
 }
 
 .form .required p {
-    font-size: 1.7rem;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: rgb(16, 16, 16); 
 }
 
 .form .required .starIcon {
     position: absolute;
-    top: 0;
-    left: 45.5%;
+    top: -.3rem;
+    left: -.6rem;
     font-size: .8rem;
     color: red;
 }
 
 form {
     width: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 /* ---------------------------------------- */
 form .name {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 form .name .firstName, .lastName {
     display: flex;
     flex-direction: column;
     gap: .8rem;
+    width: 47%;
+    color: rgb(16, 16, 16); 
 }
 /* ----------------------------------------------- */
 
 form .email-phone {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 form .email-phone .email, .phone {
     display: flex;
     flex-direction: column;
+    gap: .8rem;
+    width: 47%;
+    color: rgb(16, 16, 16); 
 }
 /* --------------------------------------------- */
 
 form .country-zip {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 form .country-zip .country, .zip {
     display: flex;
     flex-direction: column;
+    gap: .8rem;
+    width: 47%;
+    color: rgb(16, 16, 16); 
 }
+/* -------------------------------------------------- */
+
+.contactContainer .subject {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 3px;
+    color: rgb(16, 16, 16); 
+    gap: .8rem;
+}
+/* --------------------------------------------------- */
+
+.contactContainer .message {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    color: rgb(16, 16, 16); 
+    width: 100%;
+}
+/* ------------------------------------------------------- */
+
+.contactContainer .btn {
+    width: 100%;
+}
+
+.contactContainer .btn button {
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .6s ease;
+    border: none;
+}
+
+.contactContainer .btn button:hover {
+    background-color: rgb(8, 29, 53);
+}
+/* ----------------------------------------------------- */
+
+.contactContainer .form form label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.contactContainer .form form label .labelIcons {
+    position: absolute;
+    top: 0;
+    left: 8.3rem;
+    color: red;
+    font-size: .8rem;
+}
+
+.contactContainer .form form label .labelMailIcons {
+    position: absolute;
+    top: 0;
+    left: 4.3rem;
+    color: red;
+    font-size: .8rem;
+}
+
+.contactContainer .form form label .labelPhoneIcons {
+    position: absolute;
+    top: 0;
+    left: 4.8rem;
+    color: red;
+    font-size: .8rem;
+}
+
+.contactContainer .form form label .labelCountryIcons {
+    position: absolute;
+    top: 0;
+    left: 11.3rem;
+    color: red;
+    font-size: .8rem;
+}
+
+.contactContainer .form form label .labelZipIcons {
+    position: absolute;
+    top: 0;
+    left: 8.7rem;
+    color: red;
+    font-size: .8rem;
+}
+
+.contactContainer .form form label .labelSubjectIcons {
+    position: absolute;
+    top: 0;
+    left: 10.8rem;
+    color: red;
+    font-size: .8rem;
+}
+
+.contactContainer .form form input {
+    width: 100%;
+    height: 4rem;
+    border-radius: 3px;
+    border: 1px solid rgb(16, 16, 16);
+    color: rgb(16, 16, 16); 
+    padding-left: 1rem;
+}
+
+.contactContainer .country-zip .country select {
+    height: 4rem;
+    border-radius: 3px;
+    border: 1px solid rgb(16, 16, 16);
+    color: rgb(16, 16, 16); 
+}
+
+.contactContainer .subject select {
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 3px;
+    border: 1px solid rgb(16, 16, 16);
+    color: rgb(16, 16, 16); 
+}
+
+.contactContainer .message textarea {
+    border-radius: 3px;
+    border: 1px solid rgb(16, 16, 16);
+    color: rgb(16, 16, 16); 
+    resize: none;
+    padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .form .name .firstName,
+    .form .name .lastName,
+    .form .email-phone .email,
+    .form .email-phone .phone,
+    .form .country-zip .country,
+    .form .country-zip .zip {
+      width: 100%;
+    }
+  
+    .form .name .firstName,
+    .form .name .lastName,
+    .form .email-phone .email,
+    .form .email-phone .phone,
+    .form .country-zip .country,
+    .form .country-zip .zip,
+    .contactContainer .subject,
+    .contactContainer .message {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .contactContainer .contactUsHeader p {
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        line-height: 2.4rem;
+        padding: 0 3rem;
+    }
+  }
