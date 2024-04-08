@@ -150,8 +150,8 @@ function Home() {
 
           <div className="headers-subscribe">
             <div className="headers">
-              <h1>Enter The World Of Hodinkee</h1>
-              <p>Read. Watch. Shop. Learn. Trade. Insure. All in one place.</p>
+              <h1>ENDLESS DISCOVERY IN YOUR INBOX</h1>
+              <p>Join our mailing list to receive insider updates on our latest collections, invites to private events, and other personalized offerings.</p>
             </div>
 
             <div className="subscribe">

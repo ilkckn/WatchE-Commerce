@@ -55,13 +55,14 @@ function Footer() {
                 <p>General Inquires</p>
               </div>
             </div>
+            
           </div>
 
         </div>
 
         <div className="footerRights">
-            <a href="#"><h1>MyWatch</h1></a>
-            <p>Copyright © 2024–2025, MyWatch Inc. All Rights Reserved.</p>
+          <NavLink to="/"><h1>MyWatch</h1></NavLink>
+          <p>Copyright © 2024–2025, MyWatch Inc. All Rights Reserved.</p>
         </div>
 
       </div>

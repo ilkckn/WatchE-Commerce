@@ -1,7 +1,11 @@
 import React from "react";
+import image from '../assets/image/contact-image1.jpg'
 import "../styles/Contact.css";
 import { GoNorthStar } from "react-icons/go";
+import { BsChatSquareText } from "react-icons/bs";
+import { MdLocalPhone } from "react-icons/md";
 import { useId } from "react";
+import { NavLink } from "react-router-dom";
 
 function Contact() {
 
@@ -110,6 +114,24 @@ function Contact() {
             <button type="submit">submit message</button>
           </div>
         </form>
+      </div>
+
+      <div className="otherWaysToGetInTouch">
+        <h1>Other Ways to Get in Touch:</h1>
+        <div className="phone-chat">
+          <div className="phoneNumber">
+            <MdLocalPhone className="phoneNumberIcon" />
+            <NavLink className="phoneNumberLink" to="/contact"><p>call: +49-171-123-45-67</p></NavLink>
+          </div>
+          <div className="chat">
+            <BsChatSquareText className="chatIcon" />
+            <NavLink className="chatLink" to="/contact">Live Chat</NavLink>
+          </div>
+        </div>
+      </div>
+
+      <div className="bodyImage">
+        <img src={image} alt="" />
       </div>
     </div>
   );

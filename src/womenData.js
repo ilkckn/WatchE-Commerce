@@ -15,12 +15,12 @@ export const data = [
         name: "Vacheron Constantin",
         image: image1,
         shipping: "free",
-        product: "leather"
+        product: ["leather", "classic"]
     },
     {
         id: 20,
         price: 1500,
-        name: "Jaguar",
+        name: "Lacoste",
         image: image2,
         shipping: "free",
         product: "diamond"
@@ -47,7 +47,7 @@ export const data = [
         name: "Sylvi TIMEGRAPHER Black RG",
         image: image5,
         shipping: "free",
-        product: "metal"
+        product: ["metal", "sport"]
     },
     {
         id: 60,
@@ -55,7 +55,7 @@ export const data = [
         name: "Apple Watch",
         image: image6,
         shipping: "free",
-        product: "apple"
+        product: ["apple", "sport"]
     },
     {
         id: 70,
@@ -63,7 +63,7 @@ export const data = [
         name: "Apple Watch",
         image: image7,
         shipping: "free",
-        product: "apple"
+        product: ["apple", "sport"]
     },
     {
         id: 80,
@@ -71,7 +71,7 @@ export const data = [
         name: "Apple Watch",
         image: image8,
         shipping: "free",
-        product: "apple"
+        product: ["apple", "sport"]
     },
     {
         id: 90,
@@ -79,6 +79,6 @@ export const data = [
         name: "Apple Watch",
         image: image9,
         shipping: "free",
-        product: ["apple", "metal"]
+        product: ["apple", "sport", "metal"]
     }
 ]

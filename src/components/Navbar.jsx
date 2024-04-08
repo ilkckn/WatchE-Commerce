@@ -97,7 +97,7 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <div className="cartBase">
+          <div className={`cartBase ${isOpen ? "open" : ""}`}>
             <Link className="cart" to="/cart">
               <>
                 <RiShoppingCartLine id="cart" />

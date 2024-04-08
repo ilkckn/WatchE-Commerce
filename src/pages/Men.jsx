@@ -19,6 +19,7 @@ function Men() {
 
   return (
     <div className="menContainer" id="men">
+      
       <div className="productTypesContainer1">
         <p className="filter1">filter</p>
         <div className="sportProducts1">
@@ -43,16 +44,12 @@ function Men() {
         </div>
         <div className="leatherStrapProducts1">
           <NavLink to="#">
-            <p onClick={() => handleFilterClick("leather")}>
-              leather strap watches
-            </p>
+            <p onClick={() => handleFilterClick("leather")}>leather strap watches</p>
           </NavLink>
         </div>
         <div className="metalStrapProducts1">
           <NavLink to="#">
-            <p onClick={() => handleFilterClick("metal")}>
-              metal strap watches
-            </p>
+            <p onClick={() => handleFilterClick("metal")}>metal strap watches</p>
           </NavLink>
         </div>
       </div>
