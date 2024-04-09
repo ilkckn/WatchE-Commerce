@@ -72,7 +72,7 @@
 }
 
 .footerContainer .footerContain .footerInfo .follow-us .followUsLinks:hover {
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 
 .footerContainer .footerContain .footerInfo .follow-us .followUsLinks:hover + .mediaName {
