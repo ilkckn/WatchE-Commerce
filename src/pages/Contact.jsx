@@ -4,10 +4,12 @@ import "../styles/Contact.css";
 import { GoNorthStar } from "react-icons/go";
 import { BsChatSquareText } from "react-icons/bs";
 import { MdLocalPhone } from "react-icons/md";
-import { useId } from "react";
+import { useId, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Chat from "../components/Chat";
 
 function Contact() {
+  const [showChat, setShowChat] = useState(false);
 
   const firstNameId = useId();
   const lastNameId = useId();
@@ -16,6 +18,10 @@ function Contact() {
   const countryId = useId();
   const zipId = useId();
   const subjectId = useId();
+
+  const openChat = () => {
+    setShowChat(true);
+  };
 
   return (
     <div className="contactContainer" id="contact">
@@ -125,10 +131,12 @@ function Contact() {
           </div>
           <div className="chat">
             <BsChatSquareText className="chatIcon" />
-            <NavLink className="chatLink" to="/contact">Live Chat</NavLink>
+            <NavLink className="chatLink" to="/contact" onClick={openChat}>Live Chat</NavLink>
           </div>
         </div>
       </div>
+
+      {showChat && <Chat onClose={() => setShowChat(false)} />}
 
       <div className="bodyImage">
         <img src={image} alt="" />

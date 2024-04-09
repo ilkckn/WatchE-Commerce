@@ -107,7 +107,7 @@ li {
   bottom: 0;
   right: 0;
   left: 0;
-  border-bottom: 1.5px solid rgb(34, 103, 169);
+  border-bottom: 1.5px solid rgb(2, 18, 34);
   z-index: -1;
   transition: transform 0.6s ease;
   transform: scaleX(0);
@@ -188,11 +188,12 @@ a.img.active {
     position: absolute;
     top: 10rem;
     left: 0;
-    background-color: rgb(2, 18, 34);
+    background-color: rgb(2, 18, 34, .1);
+    backdrop-filter: blur(10px);
   }
   .link:hover,
   .link:focus {
-    color: rgb(255, 255, 255);
+    color: rgb(2, 18, 34);
     font-weight: 600;
   }
   ul {
@@ -217,20 +218,20 @@ a.img.active {
     display: flex;
   }
   .link {
-    color: white;
-    font-weight: 400;
+    color: rgb(2, 18, 34);
+    font-weight: 500;
   }
 
   .cartBase {
     position: absolute;
-    color: white;
+    color: rgb(2, 18, 34);
     top: 12rem;
     left: 11rem;
     display: none;
   }
 
   .cartBase .cart {
-    color: rgb(255, 255, 255);
+    color: rgb(2, 18, 34);
   }
   .search-cart-container {
     display: none;

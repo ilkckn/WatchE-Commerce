@@ -1,3 +1,98 @@
 .chatContainer {
-    
+    width: 300px;
+    height: 40rem;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100; /* Chat ekranını footer'ın üzerine getir */
+}
+
+.chatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 1px solid #02182b;
+}
+
+.chatHeader h2 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    font-size: 2.3rem;
+    color: #02182b;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
+
+.chatBody {
+    flex-grow: 1;
+    height: auto;
+    width: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    width: 100%;
+}
+
+.chatInput {
+    padding: 15px 10px;
+    border-top: 1px solid #02182b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.chatInput textarea {
+    width: 100%; 
+    height: 60px; 
+    resize: none;
+    border: 1px solid #02182b;
+    color: #02182b;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.chatInput textarea::placeholder {
+    color: #02182b;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.chatInput button {
+    width: 100%;
+    padding: 10px;
+    background-color: #02182b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatInput button:hover {
+    background-color: #0056b3;
 }
