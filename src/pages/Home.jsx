@@ -18,6 +18,14 @@ function Home() {
   const slideRef = useRef(null);
 
   useEffect(() => {
+    const infoElements = document.querySelectorAll('.info h1, .info h4, .info p, .info .button');
+    infoElements.forEach(element => {
+      element.style.opacity = '1';
+      element.style.transform = 'translateY(0)';
+    });
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       if (currentSlide === slides.length - 1) {
         setCurrentSlide(0);

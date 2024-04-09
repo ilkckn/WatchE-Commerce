@@ -69,6 +69,12 @@
   background-color: rgb(26, 97, 212);
 }
 
+.info h1, .info h4, .info p, .info .button {
+  opacity: 0; /* Elementlerin başlangıçta görünmez olmasını sağlar */
+  transform: translateY(150px); /* Elementleri aşağıya doğru 20 piksel kaydırır */
+  transition: opacity 1s ease, transform 1s ease; /* Geçiş efektleri ekler */
+}
+
 /* ------------------------------------------ */
 
 

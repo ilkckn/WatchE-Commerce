@@ -283,7 +283,7 @@
 }
 
 .emptyCartMessage {
-    font-size: 3rem;
+    font-size: 3.2rem;
     letter-spacing: 4px;
     display: flex;
     align-items: center;
@@ -292,7 +292,7 @@
     gap: 2rem;
     border: 1px solid rgb(2, 35, 66);
     border-radius: 5px;
-    width: 50rem;
+    width: 60rem;
     height: 10rem;
     color: rgb(2, 35, 66);
 }
@@ -346,6 +346,10 @@
 @media (max-width: 600px) {
     .total {
         width: 50rem;
+    }
+    .emptyCartMessage {
+        font-size: 2rem;
+        width: 35rem;
     }
 }
 

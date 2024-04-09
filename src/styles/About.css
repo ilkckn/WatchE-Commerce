@@ -25,9 +25,8 @@
 .aboutContainer .image-header .about-image-info {
     position: absolute;
     left: 20%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
-    z-index: 111;
 }
 
 .image-header .about-image-info .link1 {
