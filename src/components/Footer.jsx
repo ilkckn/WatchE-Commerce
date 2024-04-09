@@ -21,9 +21,13 @@ function Footer() {
                 <h2>follow us</h2>
                 <div className="followIcons">
                   <NavLink className="followUsLinks" to="https://www.instagram.com/" target="_blank"><CiInstagram/></NavLink>
+                  <p className="mediaName">Instagram</p>
                   <NavLink className="followUsLinks" to="https://www.youtube.com/" target="_blank"><SiYoutubeshorts /></NavLink>
+                  <p className="mediaName">Youtube</p>
                   <NavLink className="followUsLinks" to="https://twitter.com/?lang=en" target="_blank"><RiTwitterXFill /></NavLink>
+                  <p className="mediaName">Twitter</p>
                   <NavLink className="followUsLinks" to="https://www.facebook.com/" target="_blank"><FaSquareFacebook /></NavLink>
+                  <p className="mediaName">Facebook</p>
                 </div>
               </div>
 
