@@ -1,6 +1,6 @@
 .chatContainer {
     width: 300px;
-    height: 40rem;
+    height: 43rem;
     background-color: white;
     position: fixed;
     bottom: 20px;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 100; /* Chat ekranını footer'ın üzerine getir */
+    z-index: 100; 
 }
 
 .chatHeader {
@@ -19,11 +19,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    border-bottom: 1px solid #02182b;
+    border-bottom: 1px solid #02182b6b;
 }
 
 .chatHeader h2 {
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
     margin: 0;
     letter-spacing: 1px;
 }
@@ -56,7 +58,7 @@
 
 .chatInput {
     padding: 15px 10px;
-    border-top: 1px solid #02182b;
+    border-top: 1px solid #02182b6b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +70,7 @@
     width: 100%; 
     height: 60px; 
     resize: none;
-    border: 1px solid #02182b;
+    border: 1px solid #02182b6b;
     color: #02182b;
     border-radius: 5px;
     padding: 10px;
