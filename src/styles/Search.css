@@ -1,6 +1,6 @@
 .searchContainer {
   width: 100%;
-
+  font-family: "Montserrat", sans-serif;
   margin-top: 10rem;
   padding-bottom: 5rem;
 }
@@ -90,7 +90,7 @@
   gap: 3rem;
   width: 100%;
   padding: 0 10rem;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .filteredProductImage img {
@@ -109,33 +109,39 @@
   overflow: auto;
 }
 
+.searchedProductsContainer .product:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px rgb(16, 55, 94, .2);
+}
+
 .filteredProductName {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 .filteredProductPrice {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 500;
 }
 
 .filteredProductButton .btn {
   padding: 1rem 3rem;
-  border: 1.5px solid rgb(16, 55, 94);
-  border-radius: 8px;
+  border: 1px solid rgb(16, 55, 94);
+  border-radius: 3px;
   color: rgb(16, 55, 94);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   background-color: transparent;
   cursor: pointer;
-  transition: color 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .filteredProductButton .btn:hover {
   background-color: rgb(37, 92, 148);
   color: white;
+  border: transparent;
 }
 
 @media (max-width: 1024px) {

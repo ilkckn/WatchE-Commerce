@@ -63,7 +63,7 @@ function Search() {
               </div>
               <div className="filteredProductName">{product.name}</div>
               <div className="filteredProductPrice">
-                Product Price: {product.price} €
+                Product Price: {product.price}€
               </div>
               <div className="filteredProductButton">
                 <button className="btn" onClick={() => addToCart(product)}>Add to Cart</button>
