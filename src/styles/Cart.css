@@ -42,7 +42,7 @@
 
 .totalItem {
     width: 100%;
-    height: calc(100vh - 10rem);
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +50,7 @@
 
 .totalItem ul {
     width: 100%;
+    height: auto;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -338,9 +339,18 @@
     font-size: 1.7rem;
 }
 
+@media (max-width: 1024px) {
+    .totalItem ul {
+        padding-top: 0;
+    }
+}
+
 @media (max-width: 800px) {
     .total {
         width: 60rem;
+    }
+    .totalItem ul {
+        padding-top: 0;
     }
 }
 
@@ -359,12 +369,6 @@
         width: 30rem;
     }
 
-    .totalImage .image-info {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .totalItem ul li {
         width: 100%;
         height: 25rem;
@@ -372,15 +376,36 @@
         justify-content: space-between;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
         padding: 0;
         border: 1px solid black;
     }
+
+    .totalImage {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .totalImage img {
+        width: 10rem;
+        margin: 0;
+        padding: 0;
+    }
     
+    .image-info {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
     .productsTotalInfo {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: .5rem;
         width: 100%;
         height: 100%;

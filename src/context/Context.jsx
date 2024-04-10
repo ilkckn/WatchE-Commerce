@@ -6,7 +6,7 @@ import ReactModal from "react-modal";
 ReactModal.setAppElement("#root");
 
 const initialState = {
-  cart: [],
+  cart: JSON.parse(localStorage.getItem("items")) || [],
   modelIsOpen: false,
   modalContent: "",
   filter: "", 

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Cart.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Context } from "../context/Context";
 import { HiMiniTrash } from "react-icons/hi2";
 import { TbTrashOff } from "react-icons/tb";
@@ -12,6 +12,10 @@ import { AiOutlineSecurityScan } from "react-icons/ai";
 
 function Cart() {
   const { state, dispatch } = useContext(Context);
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(state.cart))
+  },[state.cart])
 
   function removeFromCart(item) {
     dispatch({
