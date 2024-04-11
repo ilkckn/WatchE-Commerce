@@ -188,12 +188,12 @@ a.img.active {
     position: absolute;
     top: 10rem;
     left: 0;
-    background-color: rgb(2, 18, 34, .1);
+    background-color: rgb(2, 18, 34, .6);
     backdrop-filter: blur(10px);
   }
   .link:hover,
   .link:focus {
-    color: rgb(2, 18, 34);
+    color: rgb(101, 170, 240);
     font-weight: 600;
   }
   ul {
@@ -218,7 +218,7 @@ a.img.active {
     display: flex;
   }
   .link {
-    color: rgb(2, 18, 34);
+    color: rgb(255, 255, 255);
     font-weight: 500;
   }
 
@@ -231,7 +231,7 @@ a.img.active {
   }
 
   .cartBase .cart {
-    color: rgb(2, 18, 34);
+    color: rgb(101, 170, 240);
   }
   .search-cart-container {
     display: none;
