@@ -1,13 +1,13 @@
 .homeContainer {
   width: 100%;
   min-height: 100vh;
-  margin-top: 10rem;
+  padding-top: 10rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
   background-color: rgb(252, 254, 255);
+  position: relative;
 }
 
 .homeImage img {
@@ -38,7 +38,7 @@
 .info h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  font-weight:500;
+  font-weight: 500;
   letter-spacing: 1px;
   color: rgba(75, 75, 75, 0.869);
 }
@@ -70,29 +70,32 @@
   background-color: rgb(26, 97, 212);
 }
 
-.info h1, .info h4, .info p, .info .button {
-  opacity: 0; 
-  transform: translateY(150px); 
-  transition: opacity 1s ease, transform 1s ease; 
+.info h1,
+.info h4,
+.info p,
+.info .button {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 /* ------------------------------------------ */
 
-
 .body1 {
+  margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 .body1 .image,
 .body1 .text {
-  flex: 1 1 50%; 
+  flex: 1 1 50%;
   max-width: 50%;
 }
 
 .body1 .image img {
   width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 .body1 .text {
@@ -102,7 +105,7 @@
   align-items: center;
   gap: 1rem;
   background-color: rgb(16, 16, 16);
-  padding: 2rem; 
+  padding: 2rem;
 }
 
 .body1 .text h1 {
@@ -117,7 +120,7 @@
   font-family: "Josefin Slab", serif;
   font-size: 1.6rem;
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   line-height: 2rem;
   color: white;
   padding: 0 4rem;
@@ -167,13 +170,11 @@
   margin-top: 1.8rem;
   margin-bottom: 1rem;
   width: 142rem;
-  height: .3rem;
+  height: 0.3rem;
   background-color: rgb(16, 16, 16);
 }
 
-
 /* ---------------------------------------------- */
-
 
 .body3 {
   width: 100%;
@@ -181,7 +182,7 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(20, 114, 164, .1);
+  background-color: rgba(20, 114, 164, 0.1);
 }
 
 .body3 .news {
@@ -210,7 +211,7 @@
 }
 
 .body3 .channels .p2 img {
-    width: 21rem;
+  width: 21rem;
 }
 
 .body3 .channels .p3 {
@@ -227,7 +228,6 @@
   text-transform: uppercase;
 }
 
-
 /* ------------------------------------ */
 
 .body4 {
@@ -238,7 +238,7 @@
 
 .body4 .image,
 .body4 .text {
-  flex: 1 1 50%; 
+  flex: 1 1 50%;
   max-width: 50%;
 }
 
@@ -272,19 +272,18 @@
   font-weight: 200;
   font-size: 1.6rem;
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   line-height: 2rem;
   color: white;
 }
 
 /* --------------------------------------------- */
 
-
 .body5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -303,7 +302,7 @@
 .body5 .text1,
 .body5 .text2,
 .body5 .text3 {
-  width: 30rem; 
+  width: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -353,11 +352,11 @@
   border-radius: 3px;
   position: relative;
   z-index: 1;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .body5 button::before {
-  content:"";
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -365,7 +364,7 @@
   left: 0;
   background-color: rgb(8, 20, 40);
   z-index: -1;
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -380,9 +379,7 @@
   transform: scaleX(1);
 }
 
-
 /* ---------------------------------------------------------------------- */
-
 
 .body6 {
   width: 100%;
@@ -465,19 +462,11 @@
   background-color: rgb(26, 97, 212);
   color: white;
   border-radius: 3px;
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
 
 @media (max-width: 1200px) {
   .bcg .headers-subscribe {
@@ -501,14 +490,12 @@
   }
   .bcg .headers-subscribe .subscribe .subscribeForm input {
     width: 55%;
-    
   }
-  
+
   .bcg .headers-subscribe .subscribe .subscribeForm button {
     width: 15%;
   }
 }
-
 
 @media (max-width: 1024px) {
   .homeContainer {
@@ -566,7 +553,7 @@
 
   .body4 .image,
   .body4 .text {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
     max-width: 100%;
   }
 
@@ -589,7 +576,7 @@
     padding-bottom: 3rem;
     border-bottom: 1px solid rgb(16, 16, 16);
   }
-  
+
   .body5 .text2 {
     border-right: none;
     border-bottom: 1px solid rgb(16, 16, 16);
@@ -615,9 +602,8 @@
   }
   .bcg .headers-subscribe .subscribe .subscribeForm input {
     width: 65%;
-    
   }
-  
+
   .bcg .headers-subscribe .subscribe .subscribeForm button {
     width: 30%;
   }
